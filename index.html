@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Asset/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="Asset/css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Rigister</title>
+</head>
+<body>
+  <header style="background-color: rgb(35, 204, 19);">
+           <img src="https://spi.edu.kh/assets/img/SPI_Logo2.png" style="width: 200px;">
+  </header>
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="" data-toggle="modal" data-target="#rigister">
+        <!-- <a href="" class="btn btn-warning" data-toggle="modal" data-target="#view">View Profile</a> -->
+            <!-- <i class="fas fa-fw fa-wrench"></i> -->
+           <u style="color: rgb(0, 0, 0);"> <h3 style="text-align: center;  color: rgb(35, 204, 19);">ចុះឈ្មោះសិស្ស |Rigister Students </h3></u>
+        </a>
+        <div class="modal fade" id="rigister"  role="dialog" aria-labelledby="userModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="userModalLabel">​ចុះឈ្មោះ | Rigister</h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<form action="Studentss/RigisterStudents.php" method="POST">
+  <div class="form-group">
+    <label for="Email">Email</label>
+    <input type="text" name="email" class="form-control" id="email" required placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="Username">Username</label>
+    <input type="text" name="username" class="form-control" id="username" required placeholder="Username">
+  </div>
+  <div class="form-group">
+    <label for="Password">Password</label>
+    <input type="password" name="password" class="form-control" id="password" required placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="Re-typepassword">Retype - Password</label>
+    <input type="password" name="retype_password" class="form-control" id="retype_password" required placeholder="Retype-Password">
+  </div>
+  <select class="form-select form-select-sm" id="gender" name="gender" required>
+  <option value="no select"  selected disabled >Select Gender</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+  </select>
+  <select class="form-select form-select-sm" id="skills" name="skills" required>
+    <!-- <option value="">Select Skills</option> -->
+    <option value="no select"  selected disabled >Select Skill</option>
+    <option value="ព័ត៍មានវិទ្យា">ព័ត៍មានវិទ្យា(IT)</option>
+    <option value="អក្សរសាស្រ្តអង់គ្លេស់">អក្សរសាស្រ្តអង់គ្លេស់(English)</option>
+    <option value="គ្រប់គ្រងទេសចរណ៍">គ្រប់គ្រងទេសចរណ៍(ទេសចរណ៍)</option>
+    <option value="ក្សេត្រសាស្រ្ត">ក្សេត្រសាស្រ្ត(កសិកម្ម)</option>
+    <option value="សង្គមកិច្ច">សង្គមកិច្ច</option>
+    <!-- <option value="other">Other</option> -->
+ </select>
+ <br>
+ <br>
+ 
+  <div class="form-group">
+    <label for="Phone">Phone</label>
+    <input type="text" name="phone" class="form-control" id="phone" required placeholder="Number Phone">
+  </div>
+  <div class="form-group">
+                <label for="image">Image</label>
+                <input type="file" class="form-control" name="image" id="image" >
+            </div>
+  <!-- <div class="form-group">
+    <label for="username">Username:</label>
+    <input type="text" name="new_username" class="form-control" id="username" required>
+  </div>
+  <div class="form-group">
+    <label for="password">Password:</label>
+    <input type="password" name="new_password" class="form-control" id="password" required>
+  </div>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" name="new_email" class="form-control" id="email" required>
+  </div>
+ -->
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+<input type="submit" class="btn btn-danger" name="button" value="Submit">
+</div>
+</div>
+</div>
+</div>
+</form>
+</li>
+</body>
+</html>
